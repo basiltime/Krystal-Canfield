@@ -1,3 +1,80 @@
 * {
     font-family: 'Mukta', sans-serif;
 }
+p, a, li {
+    font-size: 20px;
+}
+h1 {
+    font-size: 75px !important;
+}
+h2 {
+    font-size: 40px !important;
+}
+a {
+    color: black !important;
+}
+a.button, button.button {
+    box-sizing: border-box;
+    border-radius: .25rem;
+    border: none;
+    box-shadow: none;
+    padding: 3px 13px;
+    text-decoration: none;
+    background: grey;
+    color: white !important;
+}
+nav {
+    padding: 1.2rem;
+}
+#navDropdown {
+    display: block;
+    text-align: right;
+    margin-bottom: 0;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:hover {
+    color: #ED217C !important;
+}
+.burger {
+    display: none !important;
+    position: absolute;
+    right: 2rem;
+    padding: 4px;
+}
+.burger:hover {
+    transform-origin: center;
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 767px) {
+    .burger {
+        display: inline-block !important;
+        z-index: 1;
+    }
+    #navDropdown {
+        display: none;
+        padding-top: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 2rem; 
+        z-index: 0;
+    }
+    nav {
+        height: 60px;
+    }
+    nav li {
+        display: block;
+    }
+}
+.show-menu {
+    display: block !important;
+}
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
