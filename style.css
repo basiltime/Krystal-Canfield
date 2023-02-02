@@ -5,7 +5,24 @@ p, a, li {
     font-size: 20px;
 }
 h1 {
-    font-size: 75px !important;
+    font-size: 100px !important;
+    position: relative;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    z-index: 0;
+}
+h1::after {
+    content: "";
+    background: rgba(91,231,241);
+    height: 1.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -2rem;
+    z-index: -1;
+
 }
 h2 {
     font-size: 40px !important;
@@ -15,10 +32,10 @@ a.button, button.button {
     border-radius: .25rem;
     border: none;
     box-shadow: none;
-    padding: 3px 13px;
+    padding: 16px 48px;
     text-decoration: none;
-    background: grey;
-    color: white !important;
+    background: #f5bb00;
+    color: black !important;
 }
 nav {
     padding: 1.2rem;
@@ -77,4 +94,10 @@ nav a {
 section {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.bg-image {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
