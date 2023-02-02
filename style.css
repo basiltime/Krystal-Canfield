@@ -10,9 +10,6 @@ h1 {
 h2 {
     font-size: 40px !important;
 }
-a {
-    color: black !important;
-}
 a.button, button.button {
     box-sizing: border-box;
     border-radius: .25rem;
@@ -38,7 +35,7 @@ nav a {
     text-decoration: none;
     padding: 1rem;
 }
-nav a:hover {
+#navDropdown a:hover {
     color: #ED217C !important;
 }
 .burger {
@@ -63,6 +60,9 @@ nav a:hover {
         right: 1rem;
         top: 2rem; 
         z-index: 0;
+    }
+    #navDropdown a {
+        color: #212529 !important;
     }
     nav {
         height: 60px;
