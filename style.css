@@ -15,7 +15,7 @@ h1 {
 }
 h1::after {
     content: "";
-    background: rgba(91,231,241);
+    background: #5be7f1;
     height: 1.5rem;
     width: 100%;
     position: absolute;
@@ -34,7 +34,7 @@ a.button, button.button {
     box-shadow: none;
     padding: 16px 48px;
     text-decoration: none;
-    background: #f5bb00;
+    background: #FFC300;
     color: black !important;
 }
 nav {
@@ -100,4 +100,18 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.card {
+    min-height: 300px;
+    border-radius: 0;
+}
+.card-body {
+    margin: 12px;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.card-shadow {
+    border-radius: .25rem;
+    box-shadow: 10px 10px 2px rgb(91, 231, 241, 0.4);
 }
