@@ -35,7 +35,14 @@ a.button, button.button {
     padding: 16px 48px;
     text-decoration: none;
     background: #FFC300;
-    color: black !important;
+    color: #212529 !important;
+    transition: .2s;
+}
+.button:hover {
+    transform: translateY(-2px);
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.48);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.48);
 }
 nav {
     padding: 1.2rem;
@@ -79,7 +86,7 @@ nav a {
         z-index: 0;
     }
     #navDropdown a {
-        color: #212529 !important;
+        color: #21252970 !important;
     }
     nav {
         height: 60px;
@@ -104,6 +111,7 @@ section {
 .card {
     min-height: 300px;
     border-radius: 0;
+    border-color: #21252970;
 }
 .card-body {
     margin: 12px;
@@ -113,5 +121,18 @@ section {
 }
 .card-shadow {
     border-radius: .25rem;
-    box-shadow: 10px 10px 2px rgb(91, 231, 241, 0.4);
+    border: 2px solid rgb(91, 231, 241);
+    -webkit-box-shadow: 1px 1px 3px 0px  rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+}
+.form-control {
+    height: 56px;
+    border: 1px solid #21252970;
+}
+.form-control:focus {
+    border: 2px solid rgb(91, 231, 241);
+    -webkit-box-shadow: 1px 1px 3px 0px  rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
 }

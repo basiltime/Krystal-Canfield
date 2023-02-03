@@ -89,8 +89,23 @@
         <section class="p-1 p-sm-4 p-md-5">
             <div class="container p-5">
                 <div class="row">
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="profile-pic" style="background-color: #5be7f1; border-radius: 50%; height: 200px; width: 200px;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h2>Professional Summary</h2>
+                        <p>I've been creating websites since 2020, when I learned to code in order to change careers and break in to web development. I've worked professionally as a web developer for over a year, building eCommerce sites, adding new pages, features, and fixing bugs. My greatest strength is in front end development and I really enjoy creating beautiful, functional user interfaces.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="p-1 p-sm-4 p-md-5">
+            <div class="container p-5">
+                <div class="row">
                     <div class="col">
-                        <h2>Skills and Experience</h2>
+                        <h2>Skills and Experience Overview</h2>
                         <ul>
                             <li>Responsive Web Development</li>
                             <li>Frameworks such as React, Bootstrap and jQuery</li>
@@ -111,16 +126,26 @@
         <section class="bg-light p-1 p-sm-4 p-md-5 contact">
             <div class="container p-5">
                 <div class="row">
-                    <h2>Get in Touch!</h2>
-                    <p>Send me a message, and I'll get back with you soon.</p>
-                    <form action="https://formsubmit.co/dfb7451573ee6e900f208ff4f6ee2c75" method="POST">
-                        <input type="hidden" name="_subject" value="New contact from personal website">
-                        <input type="hidden" name="_next" value="https://basiltime.github.io/personal_site/">
-                        <input type="hidden" name="_autoresponse" value="Thank you for your email, I'll be in touch with you soon">
-                        <input type="text" name="name" placeholder="Full Name" class="form-control my-1" required>
-                        <input type="email" name="email" placeholder="Email"  class="form-control my-1" required>
-                        <button class="button" type="submit">Send</button>
-                    </form>
+                    <div class="col-12">
+                        <h2>Get in Touch</h2>
+                        <p>Filling out the form below to send me an email. </p>
+                        <form action="https://formsubmit.co/dfb7451573ee6e900f208ff4f6ee2c75" method="POST" class="row mt-3">
+                            <input type="hidden" name="_subject" value="New contact from personal website">
+                            <input type="hidden" name="_next" value="https://basiltime.github.io/personal_site/">
+                            <input type="hidden" name="_autoresponse" value="Thank you for your message! You should receive a response from me in 48 hours.">
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="name" placeholder="Full Name" class="form-control" required>
+                                <input type="email" name="email" placeholder="Email"  class="form-control my-3 mb-md-0 mt-md-3" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <textarea name="message" placeholder="Your message here" class="form-control h-100" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="button mt-3" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -129,7 +154,7 @@
                 <div class="row">
                     <div class="col">
                         <h2>Portfolio section coming soon</h2>
-                        <p>I'm hard at work to get this section up and running. Please come back later!</p>
+                        <p>I'm working hard to get this section up and running. Please come back later!</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +163,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <p>&copy; Krystal Canfield, 2023</p>
+                        <p>Designed and developed by Krystal Canfield, 2023</p>
                     </div>
                 </div>
             </div>
