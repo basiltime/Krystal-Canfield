@@ -100,7 +100,7 @@ section {
     height: calc(100vh - 69px);
 }
 .card {
-    min-height: 300px;
+    min-height: 250px;
     border-radius: 0;
     border-color: #21252970;
 }
@@ -131,6 +131,10 @@ footer {
     height: 10vh;
     display: flex;
     align-items: center;
+}
+.card-header {
+    background-color: transparent;
+    border: none;
 }
 @media only screen and (max-width: 767px) {
     .burger {
