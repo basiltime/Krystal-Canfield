@@ -44,6 +44,12 @@ a.button, button.button {
     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.48);
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.48);
 }
+.button:active {
+    transform: translateY(2px);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 nav {
     padding: 1.2rem;
 }
@@ -58,6 +64,9 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 1rem;
+}
+#navDropdown a {
+    transition: .2s ease-in-out;
 }
 #navDropdown a:hover {
     color: #ED217C !important;
