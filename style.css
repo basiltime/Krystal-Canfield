@@ -72,41 +72,32 @@ nav a {
     transform-origin: center;
     transform: scale(1.05);
 }
-@media only screen and (max-width: 767px) {
-    .burger {
-        display: inline-block !important;
-        z-index: 1;
-    }
-    #navDropdown {
-        display: none;
-        padding-top: 2rem;
-        position: absolute;
-        right: 1rem;
-        top: 2rem; 
-        z-index: 0;
-    }
-    #navDropdown a {
-        color: #21252970 !important;
-    }
-    nav {
-        height: 60px;
-    }
-    nav li {
-        display: block;
-    }
+.skills ul {
+    columns: 2;
+    list-style: none;
+}
+.skills ul li:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin:0 10px 0 -15px;
+    color: #ED217C;
 }
 .show-menu {
     display: block !important;
 }
 section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    min-height: 300px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .bg-image {
     background-image: url("images/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.hero {
+    height: calc(100vh - 69px);
 }
 .card {
     min-height: 300px;
@@ -135,4 +126,45 @@ section {
     -webkit-box-shadow: 1px 1px 3px 0px  rgba(0,0,0,0.48);
     -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+}
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 767px) {
+    .burger {
+        display: inline-block !important;
+        z-index: 1;
+    }
+    #navDropdown {
+        display: none;
+        padding-top: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 2rem; 
+        z-index: 0;
+    }
+    #navDropdown a {
+        color: #21252970 !important;
+    }
+    nav {
+        height: 60px;
+    }
+    nav li {
+        display: block;
+    }
+    .skills ul {
+        columns: 1;
+        list-style: none;
+    }
+    h1 {
+        font-size: 10vw !important;
+    }
+    .hero {
+        height: calc(100vh - 60px);
+    }
+    .hero h2 {
+        font-size: 7vw !important;
+    }
 }
