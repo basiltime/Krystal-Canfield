@@ -20,13 +20,13 @@ const email_input = document.getElementById('email');
 form.addEventListener('submit', formSubmit);
 
 function formSubmit(event) {
-   event.preventDefault();
-   console.log('hit')
-   axios.defaults.headers.post['Content-Type'] = 'application/json';
+    event.preventDefault();
+    console.log('hit')
+    axios.defaults.headers.post['Content-Type'] = 'application/json';
     axios.post('https://formsubmit.co/dfb7451573ee6e900f208ff4f6ee2c75', {
-        name: name_input,
-        message: message_input,
-        email: email_input,
+        name: name_input.value,
+        message: message_input.value,
+        email: email_input.value,
         _subject: "New contact from personal website",
         _next: "https://basiltime.github.io/personal_site/", // change when deployed live!
         _autoresponse: "Thank you for reaching out! I'm excited to discuss your project with you. I'll respond to your email as soon as I can."
