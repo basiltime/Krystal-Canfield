@@ -58,7 +58,7 @@
                     <!-- <div class="col-12 col-md-8"> -->
                     <div class="col-12">   
                         <h2 class="mb-2">A little about me</h2>
-                        <p class="fs-4 fw-300">I've been creating websites since 2020, and I've worked professionally as a web developer since 2021. My talent and passion is front end development; I truly enjoy creating beautiful user interfaces. I'm also a capable fullstack developer, and have worked on custom eCommerce sites and CRM solutions. My latest project is called Our Seed Bank, an online garden seed swapping platform. It's currently in development, and I'm excited to release it soon!</p>
+                        <p class="fs-4 fw-300">I've been creating websites since 2020, and I've worked professionally as a web developer since 2021. My talent and passion is front end development; I truly enjoy creating beautiful user interfaces. I'm also a capable fullstack developer, and have worked on custom eCommerce sites and CRM solutions. My latest project is called Our Seed Exhange, an online garden seed swapping platform. It's currently in development, and I'm excited to start sharing more about it soon!</p>
                     </div>
                 </div>
             </div>
@@ -140,32 +140,69 @@
                     <div class="col-12">
                         <h2>Get in Touch</h2>
                         <p>Fill out the form below to send me an email. </p>
-                        <form action="https://formsubmit.co/dfb7451573ee6e900f208ff4f6ee2c75" method="POST" class="row mt-3">
-                            <input type="hidden" name="_subject" value="New contact from personal website">
-                            <input type="hidden" name="_next" value="https://basiltime.github.io/personal_site/">
-                            <input type="hidden" name="_autoresponse" value="Thank you for your message! You should receive a response from me in 48 hours.">
+                        <form id="contactForm" class="row mt-3">
                             <div class="col-12 col-md-6">
-                                <input type="text" name="name" placeholder="Full Name" class="form-control" required>
-                                <input type="email" name="email" placeholder="Email"  class="form-control my-3 mb-md-0 mt-md-3" required>
+                                <input id="name" type="text" name="name" placeholder="Full Name" class="form-control" required>
+                                <input id="email" type="email" name="email" placeholder="Email"  class="form-control my-3 mb-md-0 mt-md-3" required>
                             </div>
                             <div class="col-12 col-md-6">
-                                <textarea name="message" placeholder="Your message here" class="form-control h-100" required></textarea>
+                                <textarea id="message" name="message" placeholder="Your message here" class="form-control h-100" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="button mt-3" type="submit">Send</button>
                             </div>
                         </form>
+                        
                     </div>
                     
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="">
+        <section id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <h2>Portfolio Section is Coming Soon</h2>
-                        <p>I'm working hard on this. Please come back later!</p>
+                    <div class="col-12 mb-4">
+                        <h2>Recent Projects</h2>
+                    </div>
+                    <div class="col-12 project">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                                <img src="images/greg-ward-music.jpg">
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <h3>Greg Ward Music</h3>
+                                <p class="mb-2">Musician/Producer's landing page and portfolio site.</p>
+                                <a href="https://greg-ward-music.com/" target="_blank">www.greg-ward-music.com</a><br>
+                                <a href="https://github.com/basiltime/greg_ward_music" target="_blank">See the code on Github</a>
+                                <p class="mt-2">Built with React.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 project">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                                <img src="images/logo_draft_green.png">
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <h3>Our Seed Exhange</h3>
+                                <!-- <a href="https://greg-ward-music.com/" target="_blank">www.ourseedexhange.com</a>
+                                <a href="" target="_blank">See the code on Github</a> -->
+                                <p>Our Seed Exchange is currently in development. It is a garden seed swapping platform. Features will include user registration and authentication, user rating system, and in app chat.</p>
+                                <!-- <a href="https://github.com/basiltime/seed_exhange" target="_blank">See the code on Github</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 project">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                                <img src="images/portfolio.jpg">
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <h3>About this site</h3>
+                                <p class="mb-2">I created this website with HTML, vanilla CSS, Javascript and Bootstrap 5. My contact form uses the formsubmit.co api.</p>
+                                <a href="https://github.com/basiltime/Krystal-Canfield" target="_blank">See the code on Github</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,22 +217,12 @@
             </div>
         </footer>
     </body>
-    <script>
-        /* Hamburger menu */
-        const navDropdown = document.getElementById("navDropdown");
-        let toggleMenu = () => {
-            if (!navDropdown.classList.contains('show-menu')) {
-                navDropdown.classList.add('show-menu');
-            } else {
-                navDropdown.classList.remove('show-menu');
-            }
-        }
-        const burger = document.getElementById("burger");
-        burger.addEventListener("click", toggleMenu);
-        /* End hamburger menu */
-    </script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Site Javascript -->
+    <script src="js/main.js"></script>
 </html>
 
 

@@ -4,6 +4,9 @@
 p, a, li {
     font-size: 20px;
 }
+a {
+    text-decoration: none;
+}
 h1 {
     font-size: 100px !important;
     position: relative;
@@ -137,13 +140,22 @@ section {
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
 }
 footer {
-    height: 10vh;
+    height: 20vh;
     display: flex;
     align-items: center;
 }
 .card-header {
     background-color: transparent;
     border: none;
+}
+.project {
+    margin-bottom: 3rem;
+}
+.project img {
+    max-height: 178px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 @media only screen and (max-width: 767px) {
     .burger {
@@ -179,5 +191,16 @@ footer {
     }
     .hero h2 {
         font-size: 7vw !important;
+    }
+}
+@media only screen and (max-height: 667px) {
+     .hero {
+        height: auto;
+        min-height: 100vh;
+     }
+}
+@media only screen and (max-width: 991px) {
+    .project img {
+        margin-left: unset;
     }
 }
